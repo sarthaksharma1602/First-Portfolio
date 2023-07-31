@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Oswal', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #454955;
+    background-image: url(../bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top left;
+    position: relative;
+}
+
+.first-header {
+
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.myLogo {
+    font-family: 'Russo One', sans-serif;
+    margin: 0.9rem 0px 0px 0.8rem;
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+.navigation {
+    flex-grow: 0.8;
+}
+
+.navigation ul {
+    margin: 0.9rem 0px 0px 0px;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.first-header h1,
+.first-header nav {
+    padding: 5px;
+}
+
+.links {
+    color: #f3eff5;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.1s ease-in;
+
+}
+
+.links:hover {
+    color: #16db65;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 0 9px;
+
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    padding-top: 30px;
+    max-width: 100%;
+    margin-top: 4em;
+    display: flex;
+
+
+}
+
+.about-me {
+    /* border: 2px solid; */
+    /* border-radius: 6px; */
+    padding: 3px 4px;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    max-width: 70%;
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width:780px) {
+    .first-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-header .myLogo {
+        align-self: flex-start;
+    }
+
+    .navigation ul {
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0; */
+        display: none;
+
+    }
+
+    .myLogo {
+        margin: 0.9rem 0 0 0;
+    }
+
+
+
+
+}
